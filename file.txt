@@ -1,4 +1,0 @@
-MACRO ADD_CONST reg, value
-    LOAD reg, value
-    ADD reg, value
-ENDM

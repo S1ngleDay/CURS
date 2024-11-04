@@ -1,0 +1,39 @@
+LISTING
+
+PLACE       PROGRAMME          KOP   ADDRESS      CODE
+ 0000         START  1000h
+ 1000     st    LDX   zero 		22 		1012 	221012
+ 1003           LDA    dat 		21 		101b 	21101b
+ 1006          ADDX    wsz 		12 		1015 	121015
+ 1009           STA    rez 		31 		1018 	311018
+ 100c           HLT        		0f 		0000 	0f0000
+ 100f   zero   WORD      0 		   		     	000000
+ 1012    wsz   WORD      3 		   		     	000003
+ 1015    rez   WORD      1 		   		     	000001
+ 1018    dat   WORD      7 		   		     	000007
+ 101b          WORD     11 		   		     	00000b
+ 101e           END     st
+
+START ADDRESS: 1000h 	SIZE OF PROGRAMME: 22h
+
+			Names table
+        NAME         SIGH      ADDRESS
+          st            1         1000
+        zero            1         1012
+         wsz            1         1015
+         rez            1         1018
+         dat            1         101b
+                        1         101e
+
+			Mnemonic table
+       MNEMO  COMMAND/DIR          KOP
+        RESW            1            0
+       START            1            0
+         END            1            0
+        WORD            1            0
+         HLT            0            f
+         ADD            0           11
+        ADDX            0           12
+         LDA            0           21
+         LDX            0           22
+         STA            0           31

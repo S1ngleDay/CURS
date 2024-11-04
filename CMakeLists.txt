@@ -3,4 +3,9 @@ project(CUR C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(CUR main.c)
+add_executable(CUR main.c
+        lexer.c
+        lexer.h
+        hash.c
+        hash.h
+)

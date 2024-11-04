@@ -1,0 +1,12 @@
+        START    1000h
+st:     LDX      zero
+        LDA      dat
+        ADDX     wsz
+        STA      rez
+        HLT
+zero:   WORD     0
+wsz:    WORD     3
+rez:    WORD     1
+dat:    WORD     7
+        WORD     11
+        END     st
